@@ -17,6 +17,11 @@ body {
     background: rgb(221, 221, 221);
 }
 
+p {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -77,7 +82,35 @@ a {
 }
 
 .container {
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
     margin: auto;
+}
+
+.portfolio {
+    font-size: 36px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+#contact {
+    padding-top: 20px;
+    background:  rgb(221, 221, 221);
+    font-size: 26px;
+    text-align: center;
+    margin: auto;
+    height: 400px;
+}
+
+.bottom-nav {
+    display: block;
+    border-top: 1px solid grey;
+}
+
+.student-name {
+    float: left;
+}
+
+.back {
+    float: right;
 }
