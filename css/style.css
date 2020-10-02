@@ -11,6 +11,7 @@
 
 * {
     font-family: 'Peddana', Courier, monospace;
+    font-size: 32px;
 }
 
 body {
@@ -27,15 +28,15 @@ a {
     text-decoration: none;
 }
 
+img {
+    border-radius: 10px;
+}
+
 .wrapper {
     display: block;
     width: 95%;
     margin: auto;
     background: rgb(243, 243, 243);
-}
-
-.upper {
-
 }
 
 .name {
@@ -87,6 +88,10 @@ a {
     margin: auto;
 }
 
+.container-head {
+    text-align: center;
+}
+
 .portfolio {
     font-size: 36px;
     display: inline-block;
@@ -103,14 +108,165 @@ a {
 }
 
 .bottom-nav {
-    display: block;
-    border-top: 1px solid grey;
+    display: block; 
 }
 
 .student-name {
     float: left;
+    margin-left: 30px;
 }
 
 .back {
+    margin-right: 30px;
     float: right;
+}
+
+.nav {
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    img {
+        border-radius: 5px;
+        box-shadow: 15px 15px 20px rgb(46, 46, 46);
+    }
+
+    .main-nav {
+        margin: 0 0 0 0;
+        font-family: Arial;
+        font-size: 100%;
+        }
+    
+    .main-nav li {
+        background: rgb(243, 243, 243);
+        float: left;
+        padding: 8px 50px;
+        }
+    
+    .main-nav li a {
+        display: block;
+        padding: 0 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        overflow: hidden;
+        }
+
+
+.container-head {
+    text-align: center;
+}
+
+.portfolio {
+    margin-bottom: 50px;
+}
+
+.port   {
+        float: left;
+        width: 50%;
+    }
+
+.one {
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+}
+
+.two {
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+}
+
+.me {
+    margin: 0 15px 10px 10px;
+    padding-right: 20px;
+    float: right;
+}
+
+.intro {
+    padding-left: 8px;
+    font-size: 28px;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    float: right;
+}
+
+.nav li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li a {
+    margin: 5px;
+    padding: 10px;
+}
+
+.back {
+    display: none;
+}
+
+#contact {
+    border-top: 1px solid grey;
+    width: 80%;
+    margin-top: 100px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+.name {
+    float: left;
+    margin-left: 30px;
+    }
+
+.me {
+    width: 40%;
+}
+
+.main-nav {
+    float: right;
+    padding: 0px;
+    margin: 0;
+}
+
+.main-nav li {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
 }
